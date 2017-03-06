@@ -331,6 +331,13 @@ body.loaded.collection-type-index #content-wrapper {
 #footer {
   display: none;
 }
-.parallax-item .scroll-arrow {
-  display: block;
+.parallax-item {
+  .scroll-arrow {
+    display: block;
+  }
+  &:last-child {
+    .scroll-arrow {
+      display: none;
+    }
+  }
 }
