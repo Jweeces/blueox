@@ -99,7 +99,7 @@ body.fixed-header {
   position: relative;
   z-index: 8002;
   li {
-    display: inline-block;
+    display: block;
     position: relative;
     z-index: inherit;
   }
@@ -107,10 +107,8 @@ body.fixed-header {
 
 .main-nav ul {
   font-size: @nav-font-font-size;
-  text-align: right;
   li {
-    text-align: right;
-    margin: 0 0 0 30px;
+    margin: 0;
     a,
     a:visited {
       color: @navColor;
