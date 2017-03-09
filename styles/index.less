@@ -326,9 +326,20 @@ body.loaded.collection-type-index #content-wrapper {
     padding-left: 0;
     padding-right: 0;
   }
-  .sqs-gallery-block-grid.sqs-gallery-block-meta-only-title .margin-wrapper .image-slide-title {
-    display: none;
+  .sqs-gallery-block-grid.sqs-gallery-block-meta-only-title {
+    .margin-wrapper .image-slide-title {
+      display: none;
+      position: absolute;
+      bottom: 20px;
+      background-color: rgba(40, 40, 40, 0.46);
+    }
+    .slide:hover {
+      .image-slide-title {
+        display: block;
+      }
+    }
   }
+
 }
 .parallax-item[data-url-id="about"] {
   .title-desc-wrapper.no-main-image {
