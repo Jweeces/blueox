@@ -43,12 +43,7 @@
             <div id="desktopNav" data-content-field="navigation-mainNav" data-annotation-alignment="bottom left">
               <squarespace:navigation navigationId="mainNav" template="navigation" />
             </div>
-              {.if socialAccounts}
-              <div id="sqs-social" data-content-field="connected-accounts">
-                  {.repeated section socialAccounts}{.if profileUrl}<a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
-              </div>
-              {.end}
-              {.end}
+
           </div>
         </header>
         {# /Header}
