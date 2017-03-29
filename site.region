@@ -38,18 +38,18 @@
               </a>
             </h1>
             <a class="icon-menu" id="mobileMenu"></a>
-
-            <!--MAIN NAVIGATION-->
-            <div id="desktopNav" data-content-field="navigation-mainNav" data-annotation-alignment="bottom left">
-              <squarespace:navigation navigationId="mainNav" template="navigation" />
-            </div>
               {.if socialAccounts}
               <div id="sqs-social" data-content-field="connected-accounts">
                   {.repeated section socialAccounts}{.if profileUrl}<a href="{profileUrl}" target="_blank" title="{screenname}" class="social-{serviceName}"></a>{.end}{.end}
               </div>
               {.end}
               {.end}
-              {.end}
+            {.end}
+            <!--MAIN NAVIGATION-->
+            <div id="desktopNav" data-content-field="navigation-mainNav" data-annotation-alignment="bottom left">
+              <squarespace:navigation navigationId="mainNav" template="navigation" />
+            </div>
+
           </div>
         </header>
         {# /Header}
