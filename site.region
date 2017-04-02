@@ -163,10 +163,12 @@
         {# Content Area}
         {.index?}
           {# Index}
-          <section id="content-wrapper" data-content-field="main-content">
-            {squarespace.main-content}
-            <div class="back-to-top"></div>
-          </section>
+          <div id="fullpage"
+              <section id="content-wrapper" data-content-field="main-content">
+                {squarespace.main-content}
+                <div class="back-to-top"></div>
+              </section>
+          </div>
           {# /Index}
         {.or}
           {# NonIndex}
