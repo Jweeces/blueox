@@ -163,7 +163,7 @@
         {# Content Area}
         {.index?}
           {# Index}
-          <div id="fullpage"
+          <div id="fullpage">
               <section id="content-wrapper" data-content-field="main-content">
                 {squarespace.main-content}
                 <div class="back-to-top"></div>
