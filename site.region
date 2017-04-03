@@ -21,10 +21,9 @@
   </head>
   <script>
     $(document).ready(function() {
-//        $('#work-1').addClass('fp-auto-height');
-//        $(function(){
-//            $('#work-1').slimScroll({});
-//        });
+        $(function(){
+            $('#work-1 .fp-scrollable').slimScroll({});
+        });
         $('#fullpage').fullpage({
             scrollOverflow:true
         });
