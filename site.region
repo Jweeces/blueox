@@ -22,7 +22,7 @@
   <script>
     $(document).ready(function() {
         $(function(){
-            $('#work-1 .fp-scrollable').slimScroll({});
+            $('#work-1').find('.fp-scrollable').slimScroll({});
         });
         $('#fullpage').fullpage({
             scrollOverflow:true
