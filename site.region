@@ -21,10 +21,10 @@
   </head>
   <script>
     $(document).ready(function() {
-        $('#work-1').addClass('fp-auto-height');
-        $(function(){
-            $('#work-1').slimScroll({});
-        });
+//        $('#work-1').addClass('fp-auto-height');
+//        $(function(){
+//            $('#work-1').slimScroll({});
+//        });
         $('#fullpage').fullpage({
             scrollOverflow:true
         });
