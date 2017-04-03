@@ -14,15 +14,21 @@
     </script>
 
     <script type="text/javascript" src="scripts/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="scripts/jquery.slimscroll.js"></script>
+
 
 
   </head>
   <script>
-      $(document).ready(function() {
+    $(document).ready(function() {
         $('#work-1').addClass('fp-auto-height');
-        $('#fullpage').fullpage({
+        $(function(){
+            $('#work-1').slimScroll({});
         });
-      });
+        $('#fullpage').fullpage({
+            scrollOverflow:true
+        });
+    });
   </script>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}{.if item}{.section item}{.background-source-video?} has-banner-image has-banner-video{.or}{.main-image?} has-banner-image{.end}{.end}{.end}{.or}{.section collection}{.equal? typeName "index"}{.section collections}{.section 0}{.background-source-video?} has-banner-image has-banner-video{.or}{.section mainImage} has-banner-image{.end}{.end}{.end}{.end}{.or}{.equal? typeName "album"}{.or}{.equal? typeName "gallery"}{.or}{.background-source-video?} has-banner-image has-banner-video{.or}{.section mainImage} has-banner-image{.end}{.end}{.end}{.end}{.end}{.end}{.end} {.if template.mobileStylesEnabled}{.or}mobile-styles-disabled{.end}">
 
