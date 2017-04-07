@@ -29,7 +29,7 @@
 
                           {.section externalLink}
                             <li>
-                              <a href="{url}"{.section newWindow} target="_blank"{.end}>
+                              <a href="{url}" data-menuanchor="work-1" {.section newWindow} target="_blank"{.end}>
                                 <span>{title}</span>
                               </a>
                             </li>
