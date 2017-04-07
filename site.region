@@ -22,8 +22,7 @@
   <script>
     $(document).ready(function() {
         $('#fullpage').fullpage({
-            slideSelector: '.slide-full',
-            anchors:['video', 'story', 'work-1', 'about']
+            slideSelector: '.slide-full'
         });
     });
   </script>
