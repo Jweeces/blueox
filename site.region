@@ -24,7 +24,7 @@
         $('#fullpage').fullpage({
             slideSelector: '.slide-full',
             anchors:['video', 'story', 'work-1', 'about'],
-            menu: 'menu-nav'
+            menu: '#menu-nav'
         });
     });
   </script>
