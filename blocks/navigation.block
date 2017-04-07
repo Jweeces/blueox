@@ -1,7 +1,7 @@
 {.section items}
   <nav class="main-nav">
       <div class="nav-wrapper">
-        <ul class="cf">
+        <ul class="cf" id="menu-nav">
         {.repeated section @}
 
           {.collection?}
@@ -46,7 +46,7 @@
           {.end}
 
           {.section externalLink}
-            <li class="external-link">
+            <li class="external-link" data-menuanchor="{title}">
               <a href="{url}" {.section newWindow} target="_blank"{.end}><span>{title}</span></a>
             </li>
           {.end}
