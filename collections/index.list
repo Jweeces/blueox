@@ -68,3 +68,78 @@
   {.end}
 {.end}
 </div>
+
+<script>
+    $(window).load(function () {
+        $('.parallax-item#video').append('<div class="button-link"><a href="#">FULL REEL</a></div>');
+        $('.parallax-item#video .button-link a').click(function( event ) {
+            event.preventDefault();
+            $('.parallax-item#video .sqs-video-icon').click();
+        });
+
+//        var windowH = $(window).height();
+//        var windowW = $(window).width();
+//        var screen1 = $('.parallax-item[data-url-id="video"]').outerHeight();
+//        var screen2 = $('.parallax-item[data-url-id="work"]').outerHeight();
+//        var screen3 = screen1 + screen2;
+//
+//        $('a[href="/#work"]').on('click', function (e) {
+//            e.preventDefault();
+//            var screen1 = $('.parallax-item[data-url-id="story"]').outerHeight();
+//            var screen2 = $('.parallax-item[data-url-id="video"]').outerHeight();
+//            var screen3 = screen1 + screen2;
+//            $('body,html').animate({
+//                scrollTop: screen3
+//            }, 800);
+//        });
+//
+//        $('a[href="/#about"]').on('click', function (e) {
+//            e.preventDefault();
+//            var screen1 = $('.parallax-item[data-url-id="story"]').outerHeight();
+//            var screen2 = $('.parallax-item[data-url-id="video"]').outerHeight();
+//            var screen3 = $('.parallax-item[data-url-id="work"]').outerHeight();
+//            var screen4 = screen1 + screen2 + screen3;
+//            $('body,html').animate({
+//                scrollTop: screen4
+//            }, 800);
+//        });
+//
+//        $('.parallax-item[data-url-id="about"]').css('height', windowH).css('width', windowW);
+//        $(window).resize(function () {
+//            var windowH = $(window).height();
+//            var windowW = $(window).width();
+//            $('.parallax-item[data-url-id="about"]').css('height', windowH).css('width', windowW);
+//        });
+//
+//        $('.parallax-item[data-url-id="story"]').css('height', windowH).css('width', windowW);
+//        $(window).resize(function () {
+//            var windowH = $(window).height();
+//            var windowW = $(window).width();
+//            $('.parallax-item[data-url-id="story"]').css('height', windowH).css('width', windowW);
+//        });
+//
+//        $('.parallax-item[data-url-id="video"] .scroll-arrow').on('click', function () {
+//            var screen1 = $('.parallax-item[data-url-id="video"]').outerHeight();
+//            $('body,html').animate({
+//                scrollTop: screen1
+//            }, 800);
+//        });
+//        $('.parallax-item[data-url-id="story"] .scroll-arrow').on('click', function () {
+//            var screen1 = $('.parallax-item[data-url-id="story"]').outerHeight();
+//            var screen2 = $('.parallax-item[data-url-id="video"]').outerHeight();
+//            var screen3 = screen1 + screen2;
+//            $('body,html').animate({
+//                scrollTop: screen3
+//            }, 800);
+//        });
+//        $('.parallax-item[data-url-id="work"] .scroll-arrow').on('click', function () {
+//            var screen1 = $('.parallax-item[data-url-id="story"]').outerHeight();
+//            var screen2 = $('.parallax-item[data-url-id="video"]').outerHeight();
+//            var screen3 = $('.parallax-item[data-url-id="work"]').outerHeight();
+//            var screen4 = screen1 + screen2 + screen3;
+//            $('body,html').animate({
+//                scrollTop: screen4
+//            }, 800);
+//        });
+    });
+</script>
