@@ -355,6 +355,64 @@ body.loaded.collection-type-index #content-wrapper {
     max-width: none;
     padding: 0;
   }
+  /* Transform gallery block thumbnails into bullets. */
+  .sqs-gallery-design-strip-slide {
+    opacity: 0 !important;
+    background-color: #a5b4c2; /* Set color as desired. */
+    border: 2px solid #798b9c !important; /* Set border as desired. */
+    width: 0px !important;
+    height: 0px !important;
+    padding: 6px !important; /* Set size of bullets/dots as desired. */
+    margin-left: 0.5em !important; /* Set space between as desired Remember: small screens! */
+    margin-right: 0.5em !important;
+    float: none; /* Set to right or left if desired. */
+    border-radius: 50%; /* Remove for square bullets/dots. */
+    display: inline-block; /* For video thumbnails. */
+  }
+
+  .sqs-gallery-design-strip-slide.loaded, .sqs-gallery-design-strip-slide.sqs-video-thumbnail {
+    opacity: 1 !important;
+  }
+  .sqs-video-thumbnail-icon {
+    display: none;
+  }
+  .sqs-gallery-design-strip {
+    height: inherit !important;
+  }
+  .sqs-gallery-design-strip .sqs-wrapper {
+    width: 100% !important;
+    left: 0 !important;
+    text-align: center;
+  }
+  .sqs-gallery-design-strip-slide.sqs-active-slide {
+    background-color: #798b9c; /* Set color as desired */
+  }
+
+  #promotedGalleryWrapper, .promoted-gallery-wrapper {
+    background-color: transparent; /* For promoted gallery blocks on Bedford, et. al. Set as desired. */
+  }
+
+  .sqs-gallery-thumbnails, .sqs-gallery-design-strip {
+    display: block !important; /* For promoted gallery blocks on Bedford, et. al. */
+  }
+
+  /* Enable for overlayed bullets */
+  /*
+  .sqs-gallery-design-strip {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      overflow: visible;
+      z-index: 990;
+      top: inherit;
+      bottom: 0;
+      margin-bottom: 30px;
+  }
+
+  .sqs-wrapper {
+      margin-left: -50%;
+  }
+  */
 }
 .parallax-item[data-url-id="about"] {
   .title-desc-wrapper.no-main-image {
