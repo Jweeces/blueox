@@ -1,31 +1,31 @@
 <div id="fullpage">
 {.section collection}
 
-  {.if collections.1}
-  <nav id="parallax-nav">
-    {.repeated section collections}
-      <a href="#{urlId}" id="parallax-nav-item-{urlId}"><div class="dot"><span class="nav-title">{title}</span></div></a>
-    {.end}
-  </nav>
-  {.or}
-    <!-- <div class="sqs-state-message error">There are no pages in this Index.</div> -->
-  {.end}
+  <!--{.if collections.1}-->
+  <!--<nav id="parallax-nav">-->
+    <!--{.repeated section collections}-->
+      <!--<a href="#{urlId}" id="parallax-nav-item-{urlId}"><div class="dot"><span class="nav-title">{title}</span></div></a>-->
+    <!--{.end}-->
+  <!--</nav>-->
+  <!--{.or}-->
+    <!--&lt;!&ndash; <div class="sqs-state-message error">There are no pages in this Index.</div> &ndash;&gt;-->
+  <!--{.end}-->
 
-  <div id="parallax-images">
-    {.repeated section collections}
-    <div class="image-container content-fill{.background-source-video?} has-background-video{.end}{.equal? @index 1} first{.end}" data-url-id="{urlId}" data-content-field="main-image">
-      {.background-source-video?}
-        {@|apply sqs-video-background.block}
-        <div class="image-overlay-wrapper"></div>
-      {.or}
-        {.section mainImage}
-        <img {@|image-meta} class="loading" data-load="false" />
-        <div class="image-overlay-wrapper"></div>
-        {.end}
-      {.end}
-    </div>
-    {.end}
-  </div>
+  <!--<div id="parallax-images">-->
+    <!--{.repeated section collections}-->
+    <!--<div class="image-container content-fill{.background-source-video?} has-background-video{.end}{.equal? @index 1} first{.end}" data-url-id="{urlId}" data-content-field="main-image">-->
+      <!--{.background-source-video?}-->
+        <!--{@|apply sqs-video-background.block}-->
+        <!--<div class="image-overlay-wrapper"></div>-->
+      <!--{.or}-->
+        <!--{.section mainImage}-->
+        <!--<img {@|image-meta} class="loading" data-load="false" />-->
+        <!--<div class="image-overlay-wrapper"></div>-->
+        <!--{.end}-->
+      <!--{.end}-->
+    <!--</div>-->
+    <!--{.end}-->
+  <!--</div>-->
   {.repeated section collections}
   <div class="parallax-item section" id="{urlId}" data-url-id="{urlId}">
     <div class="title-desc-wrapper over-image {.background-source-video?} has-main-image has-background-video{.or}{.section mainImage} has-main-image{.or} no-main-image{.end}{.end}{.equal? @index 1} first{.end}" {.section mainImage}data-color-suggested="#{colorData.suggestedBgColor}"{.end}>
