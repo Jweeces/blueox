@@ -419,13 +419,18 @@ body.loaded.collection-type-index #content-wrapper {
   .meta {
     bottom: 20%;
     background: transparent;
+    text-align: center;
     .meta-title {
-      text-align: center;
+      display: inline-block;
       font-family: "MinaxiHairline",ArialThin,sans;
       text-transform: uppercase;
       letter-spacing: 5px;
       &:before {
-        display: block;
+        display: inline-block;
+        content: '~';
+      }
+      &:after {
+        display: inline-block;
         content: '~';
       }
     }
