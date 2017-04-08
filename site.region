@@ -23,7 +23,6 @@
     $(document).ready(function() {
         $('#fullpage').fullpage({
             slideSelector: '.slide-full',
-            anchors:['video', 'story', 'portfolio', 'about'],
             menu: '#menu-nav'
         });
     });
