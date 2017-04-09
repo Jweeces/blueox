@@ -74,7 +74,7 @@ body.fixed-header {
   .site-title-font;
   margin: 0;
   padding: 0;
-  display: block;
+  display: table-cell;
   width: 30%;
   vertical-align: middle;
   line-height: 1em;
@@ -87,11 +87,24 @@ body.fixed-header {
 }
 
 #desktopNav {
-  display: block;
-  width: auto;
-  clear: both;
-  float: left;
+  display: table-cell;
+  width: 70%;
+  text-align: right;
+  vertical-align: middle;
 }
+
+body.fp-viewing-video-section {
+  .site-title {
+    display: block;
+  }
+  #desktopNav {
+    display: block;
+    width: auto;
+    clear: both;
+    float: left;
+  }
+}
+
 .secondary-nav {
   margin-bottom: 34px;
 }
