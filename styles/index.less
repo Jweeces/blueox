@@ -396,26 +396,17 @@ body.loaded.collection-type-index #content-wrapper {
     display: block !important; /* For promoted gallery blocks on Bedford, et. al. */
   }
 
-  /* Enable for overlayed bullets */
-  /*
-  .sqs-gallery-design-strip {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      overflow: visible;
-      z-index: 990;
-      top: inherit;
-      bottom: 0;
-      margin-bottom: 30px;
-  }
-
-  .sqs-wrapper {
-      margin-left: -50%;
-  }
-  */
   .sqs-gallery-controls .previous, .sqs-gallery-controls .next {
     background-color: transparent;
   }
+  @media only screen and (max-width: 768px) {
+    .sqs-video-thumbnail {
+      img {
+        display: none;
+      }
+    }
+  }
+
   .meta {
     bottom: 20%;
     background: transparent;
