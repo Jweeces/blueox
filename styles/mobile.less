@@ -163,6 +163,17 @@
 }
 
 @media only screen and (max-width: 768px) {
+  #header {
+    #sqs-social {
+      float: none;
+      text-align: center;
+      display: table-cell;
+      vertical-align: top;
+    }
+    #mobileMenu {
+      vertical-align: top;
+    }
+  }
 
   .active-bg-color-accent (@a) when (lightness(@a) >= 20%) {
     background-color: darken(@headerBgColor, 4%);
