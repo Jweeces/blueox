@@ -63,7 +63,9 @@
 	      {mainContent}
 	     </div>
     </div>
-      {.equal? @index 1}<div class="scroll-arrow"><span><a href="{@index 2 urlId}">SCROLL DOWN</a></span></div>{.end}
+      {.equal? @index 1}<div class="scroll-arrow"><span><a href="#story-section">SCROLL DOWN</a></span></div>{.end}
+      {.equal? @index 2}<div class="scroll-arrow"><span><a href="#portfolio-section">SCROLL DOWN</a></span></div>{.end}
+      {.equal? @index 3}<div class="scroll-arrow"><span><a href="#about-section">SCROLL DOWN</a></span></div>{.end}
   </div>
   {.end}
 {.end}
