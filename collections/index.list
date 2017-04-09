@@ -27,7 +27,7 @@
     <!--{.end}-->
   <!--</div>-->
   {.repeated section collections}
-  <div class="parallax-item section" id="{urlId}" data-url-id="{urlId}" data-anchor="{urlId}-anchor">
+  <div class="parallax-item section" id="{urlId}" data-url-id="{urlId}" data-anchor="{urlId}-section">
     <div class="title-desc-wrapper over-image {.background-source-video?} has-main-image has-background-video{.or}{.section mainImage} has-main-image{.or} no-main-image{.end}{.end}{.equal? @index 1} first{.end}" {.section mainImage}data-color-suggested="#{colorData.suggestedBgColor}"{.end}>
 
       {.background-source-video?}
