@@ -47,7 +47,7 @@
                  <img src="{logoImageUrl}?format=1500w" onmouseover="hover(this);" onmouseout="unhover(this);" alt="{siteTitle}" />
                   <script>
                       function hover(element) {
-                          element.setAttribute('src','/assets/blue_logo.png');
+                          element.setAttribute('src','../assets/blue_logo.png');
                       }
                       function unhover(element) {
                           element.setAttribute('src','{logoImageUrl}?format=1500w');
