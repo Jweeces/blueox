@@ -47,7 +47,7 @@
                  <img src="{logoImageUrl}?format=1500w" onmouseover="hover(this);" onmouseout="unhover(this);" alt="{siteTitle}" />
                   <script>
                       function hover(element) {
-                          element.setAttribute('src','https://static1.squarespace.com/static/58bc5edee6f2e1592cac7855/58f005cf9f7456cb9bf3e697/58f005def5e231091c3dc20a/1492125215346/BlueOx_Logo_Iso_BLU.png?format=1500w');
+                          element.setAttribute('src','https://static1.squarespace.com/static/58bc5edee6f2e1592cac7855/58f005cf9f7456cb9bf3e697/58f7bde2e4fcb5e5f99fb16a/1492631016435/blue_logo.png?format=750w');
                       }
                       function unhover(element) {
                           element.setAttribute('src','{logoImageUrl}?format=1500w');
