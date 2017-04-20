@@ -382,8 +382,12 @@ body.loaded.collection-type-index #content-wrapper {
   .fp-tableCell {
     position: relative;
     .content {
-      position: absolute;
+      position: absolute!important;
+      background-color: transparent!important;
       top: 0;
+      .content-inner {
+        background-color: transparent;
+      }
     }
   }
   .title-desc-wrapper.no-main-image {
