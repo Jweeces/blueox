@@ -379,8 +379,20 @@ body.loaded.collection-type-index #content-wrapper {
   }
 }
 .parallax-item[data-url-id="about"] {
+  .fp-tableCell {
+    position: relative;
+    .content {
+      position: absolute;
+      top: 0;
+    }
+  }
   .title-desc-wrapper.no-main-image {
     display: none;
+  }
+  .title-desc-inner {
+    .page-desc {
+      display: none;
+    }
   }
   .scroll-arrow {
     display: none;
