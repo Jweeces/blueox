@@ -78,6 +78,9 @@
             event.preventDefault();
             $('.parallax-item#video .sqs-video-icon').click();
         });
-
+        $('.parallax-item#portfolio .sqs-active-slide .meta-title').click(function( event ) {
+            event.preventDefault();
+            $('.parallax-item#portfolio .sqs-active-slide .sqs-video-icon').click();
+        });
     });
 </script>
