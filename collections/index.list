@@ -78,22 +78,13 @@
             event.preventDefault();
             $('.parallax-item#video .sqs-video-icon').click();
         });
-
-        $('.parallax-item#portfolio .sqs-active-slide .meta-title').each(function(){
-            $(this).click(function( event ) {
-                event.preventDefault();
-                console.log('old');
-                $('.parallax-item#portfolio .sqs-active-slide .sqs-video-icon').click();
-            });
+        $('.parallax-item#portfolio .sqs-active-slide .meta-title').click(function( event ) {
+            event.preventDefault();
+            console.log('old');
+            $('.parallax-item#portfolio .sqs-active-slide .sqs-video-icon').click();
         });
-        $('.parallax-item#portfolio').each(function(){
-            if($('.slide').hasClass('.sqs-active-slide')) {
-                $('.sqs-video-icon').click(function( event ) {
-                    event.preventDefault();
-                    console.log('new');
-                    $('.parallax-item#portfolio .sqs-active-slide .sqs-video-icon').click();
-                });
-            }
+        $('.parallax-item#portfolio .meta-title').each(function(){
+            $(this).addClass('sqs-video-icon');
         });
     });
 </script>
