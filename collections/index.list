@@ -79,11 +79,10 @@
             $('.parallax-item#video .sqs-video-icon').click();
         });
 
-        $('.parallax-item#portfolio .meta-title').each(function(){
-            $(this).click(function( event ) {
-                event.preventDefault();
-                console.log('old');
-                $('.parallax-item#portfolio .sqs-video-icon').click();
+        $('.parallax-item#portfolio .slide').each(function(){
+            var slide = $(this);
+            slide.find('.meta-title').click(function( event ) {
+                slide.find('.sqs-video-icon').click();
             });
         });
     });
